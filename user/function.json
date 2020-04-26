@@ -1,0 +1,22 @@
+{
+  "bindings": [
+    {
+      "route": "v2/user/{id?}/{method?}",
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "post",
+        "get",
+        "patch",
+        "delete"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
